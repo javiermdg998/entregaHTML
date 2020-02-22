@@ -4,12 +4,82 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
     <title>index</title>
   </head>
   <body>
     <header>
-      <a href="index.html"><img src="assets/icono.png" alt="" id="logo"/></a>
-      <div id="user">javiermdg</div>
+      <div class="header-container">
+        <a href="index.html"><img src="assets/icono.png" alt="" id="logo"/></a>
+
+        <span id="user">javiermdg</span>
+      </div>
     </header>
+    <div class="content" id="index">
+      <h2>Maquinas</h2>
+      <table>
+        <tr>
+          <th>ICONO</th>
+          <th>NOMBRE</th>
+          <th>OEE</th>
+          <th>PROGRESO</th>
+        </tr>
+        <tr onclick="window.location='maquinaDetalle.html'">
+          <td>
+            <img src="assets/maq1.jfif" alt="maquina" class="table-icon" />
+          </td>
+          <td>Maquina 2</td>
+          <td>80%</td>
+          <td>
+            <div class="progress">
+              <div class="progress-value" style="width:30%" />
+            </div>
+          </td>
+        </tr>
+        <tr onclick="window.location='maquinaDetalle.html'">
+          <td>
+            <img src="assets/maq1.jfif" alt="maquina" class="table-icon" />
+          </td>
+          <td>Maquina 2</td>
+          <td>80%</td>
+          <td>
+            <div class="progress">
+              <div class="progress-value" style="width:30%" />
+            </div>
+          </td>
+        </tr>
+        <tr onclick="window.location='maquinaDetalle.html'">
+          <td>
+            <img src="assets/maq1.jfif" alt="maquina" class="table-icon" />
+          </td>
+          <td>Maquina 2</td>
+          <td>80%</td>
+          <td>
+            <div class="progress">
+              <div class="progress-value" style="width:30%" />
+            </div>
+          </td>
+        </tr>
+        <tr onclick="window.location='maquinaDetalle.html'">
+          <td>
+            <img src="assets/maq1.jfif" alt="maquina" class="table-icon" />
+          </td>
+          <td>Maquina 2</td>
+          <td>80%</td>
+          <td>
+            <div class="progress">
+              <div class="progress-value" style="width:30%" />
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
   </body>
 </html>

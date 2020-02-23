@@ -9,6 +9,8 @@
       rel="stylesheet"
     />
     <title>index</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
+    <script src="js/comun.js"></script>
   </head>
   <body>
     <header>
@@ -18,24 +20,29 @@
         <span id="user">javiermdg</span>
       </div>
     </header>
-    <div class="content index">
+    <div class="content " id="detalle">
       <h2>Maquinas</h2>
-      <table>
-        <tr>
-          <th>ICONO</th>
-          <th>NOMBRE</th>
-          <th>OEE</th>
-          <th>PROGRESO</th>
-        </tr>
-        <tr>
-          <td>
-            <img src="assets/maq1.jfif" alt="maquina" class="table-icon" />
-          </td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-      </table>
+      <div class="charts-container">
+        <div class="chart-container">
+          <canvas id="chart1"></canvas>
+        </div>
+
+        <div class="chart-container">
+          <canvas id="chart2"></canvas>
+        </div>
+        <div class="chart-container">
+          <canvas id="chart3"></canvas>
+        </div>
+        <div class="chart-container">
+          <canvas id="chart4"></canvas>
+        </div>
+      </div>
     </div>
+    <footer>
+      <span>ALL RIGHTS RESERVERD</span>
+
+      <img src="assets/icono.png" alt="" id="footer-logo" />
+    </footer>
   </body>
+  <script src="js/graph1.js"></script>
 </html>

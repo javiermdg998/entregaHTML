@@ -3,7 +3,8 @@ $footer-height: 100px;
 $footer-color: #353b48;
 $header-color: #353b48;
 $body-color: #f5f6fa;
-
+// $register-bg: #273c75;
+$register-bg: $header-color;
 $table-color: #dcdde1;
 $th-color: #718093;
 $tr-hover: #dcdde1;
@@ -147,6 +148,7 @@ footer {
         transition: all 0.5s ease;
         &:hover {
           box-shadow: 6px 5px $th-color;
+          background-color: #0a3e69;
         }
       }
     }
@@ -154,9 +156,18 @@ footer {
 }
 #nueva-maquina {
   background: red;
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+.row {
+  display: flex;
+  // flex-direction: column;
 }
 .progress {
-  border: solid 1px $table-color;
+  border: solid 1px $th-color;
   .progress-value {
     background: repeating-linear-gradient(-45deg, #4cd137, #44bd32);
     animation: expand 3s ease;
@@ -188,11 +199,68 @@ footer {
     }
   }
 }
-#particles-js {
+#fondo {
   height: 100vh;
   width: 100%;
+  position: relative;
+  background-color: $register-bg;
+  z-index: 1;
+  .video-container {
+    background: red;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    & video {
+      position: relative;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      opacity: 0.2;
+    }
+  }
+}
+.register-content {
   position: absolute;
-  background-color: #273c75;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 45%;
+  width: 25%;
+  background: #dcdde1;
+  border-radius: 15px;
+
+  .form-container {
+    position: absolute;
+    z-index: 3;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    form {
+      width: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: stretch;
+      border: solid 1px red;
+      height: 60%;
+      & .row {
+        border: solid 1px black;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+      }
+      & input {
+        background-color: $body-color;
+        border: solid 1px gray;
+        padding: 5px;
+      }
+    }
+  }
 }
 @keyframes expand {
   0% {
@@ -208,5 +276,31 @@ footer {
   }
   100% {
     opacity: 1;
+  }
+}
+@media (max-width: 769px) {
+  .content {
+    max-width: 100%;
+    margin-bottom: 0px;
+  }
+  #index table {
+    width: 100%;
+  }
+  .progres-col {
+    display: none;
+  }
+  #index .contenedor-boton {
+    width: 100%;
+    height: 50px;
+    background: yellow;
+    position: relative;
+    & button {
+      display: block;
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+    }
   }
 }

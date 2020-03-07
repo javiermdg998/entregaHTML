@@ -2,10 +2,10 @@ var ctx = document.getElementById("chart1").getContext("2d");
 var myChart = new Chart(ctx, {
   type: "line",
   data: {
-    labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+    labels: ["Pieza A", "Pieza B", "Pieza C", "Pieza D", "Pieza E", "Pieza F"],
     datasets: [
       {
-        label: "# of Votes",
+        label: "Carga de husillo",
         data: [12, 18, 3, 5, 2, 3],
         backgroundColor: [
           "rgba(255, 99, 132, 0.2)",

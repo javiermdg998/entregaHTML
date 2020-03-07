@@ -70,6 +70,12 @@ footer {
   min-height: calc(100vh - 80px - 200px);
   max-width: 80%; }
 
+#index h2 {
+  width: 80%;
+  margin: 0 auto;
+  padding: 35px 0;
+  color: #353b48; }
+
 #index table {
   border-collapse: collapse;
   margin: 0 auto;
@@ -129,24 +135,62 @@ footer {
         box-shadow: 6px 5px #718093;
         background-color: #0a3e69; }
 
-#nueva-maquina {
-  background: red; }
-  #nueva-maquina .form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch; }
+#nueva-maquina h2 {
+  text-align: center;
+  padding: 45px 0 15px; }
+
+#nueva-maquina form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  min-height: 60vh; }
 
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  width: 60%;
+  height: 30px;
+  margin: 0 auto; }
+  .row > label {
+    width: 30%;
+    text-align: right;
+    margin-right: 35px;
+    padding-top: 5px; }
+  .row > input,
+  .row > select {
+    width: 70%; }
+  .row button {
+    background: #44bd32;
+    border: 0;
+    border-radius: 5px;
+    padding: 15px 35px;
+    height: 45px;
+    color: #f5f6fa;
+    font-weight: 500; }
+    .row button:hover {
+      background-color: #1f7412; }
+
+input,
+select,
+option {
+  border-color: #95a5a6;
+  border-radius: 5px; }
 
 .progress {
   border: solid 1px #718093; }
@@ -191,7 +235,7 @@ footer {
   background-color: #353b48;
   z-index: 1; }
   #fondo .video-container {
-    background: red;
+    background: #353b48;
     position: absolute;
     width: 100vw;
     height: 100vh; }
@@ -214,7 +258,8 @@ footer {
   height: 45%;
   width: 25%;
   background: #dcdde1;
-  border-radius: 15px; }
+  border-radius: 15px;
+  z-index: 5; }
   .register-content .form-container {
     position: absolute;
     z-index: 3;
@@ -222,7 +267,7 @@ footer {
     width: 100%;
     z-index: 5; }
     .register-content .form-container form {
-      width: 50%;
+      width: 80%;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -236,25 +281,42 @@ footer {
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
-      -ms-flex-pack: distribute;
-      justify-content: space-around;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
       -webkit-box-align: stretch;
       -ms-flex-align: stretch;
       align-items: stretch;
-      border: solid 1px red;
       height: 60%; }
       .register-content .form-container form .row {
-        border: solid 1px black;
         width: 100%;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
         -ms-flex-pack: distribute;
         justify-content: space-around; }
+      .register-content .form-container form label {
+        text-align: left;
+        margin: 15px 0; }
       .register-content .form-container form input {
         background-color: #f5f6fa;
         border: solid 1px gray;
-        padding: 5px; }
+        padding: 5px;
+        width: 100%; }
+
+.button {
+  background-color: #273c75;
+  padding: 10px 15px;
+  text-align: center;
+  color: #f5f6fa;
+  text-decoration: none;
+  border-radius: 5px; }
+  .button:hover {
+    background-color: #122968; }
 
 @-webkit-keyframes expand {
   0% {
@@ -280,7 +342,16 @@ footer {
   100% {
     opacity: 1; } }
 
-@media (max-width: 769px) {
+@media (max-width: 950px) {
+  .register-content {
+    width: 95%;
+    height: 75%;
+    bottom: 0;
+    top: 100%;
+    left: 2.5%;
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%); }
   .content {
     max-width: 100%;
     margin-bottom: 0px; }

@@ -13,9 +13,9 @@
   <body>
     <header>
       <div class="header-container">
-        <a href="index.html"><img src="assets/icono.png" alt="" id="logo"/></a>
+        <a href="main.html"><img src="assets/icono.png" alt="" id="logo"/></a>
 
-        <span id="user">javiermdg</span>
+        <span id="user">username</span>
       </div>
     </header>
     <div class="content" id="nueva-maquina">
@@ -23,20 +23,31 @@
       <div class="form">
         <form action="">
           <div class="row">
-            <label for="">Nombre</label>
-            <input type="text" />
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" />
           </div>
           <div class="row">
-            <label for="">apellido</label>
-            <input type="text" />
+            <label for="ip">IP</label>
+            <input
+              type="text"
+              id="ip"
+              pattern="(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)_*(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)_*){3}"
+            />
           </div>
           <div class="row">
-            <label for="">asdsad</label>
-            <input type="text" />
+            <label for="control">Control</label>
+            <select name="control" id="control">
+              <option value="CNC">CNC</option>
+              <option value="Automatico">Automatico</option>
+              <option value="Manual">Manual</option>
+            </select>
           </div>
           <div class="row">
-            <label for="">asf</label>
-            <input type="text" />
+            <label for="fabricante">Fabricante</label>
+            <input type="text" id="fabricante" />
+          </div>
+          <div class="row">
+            <button>AÑADIR</button>
           </div>
         </form>
       </div>

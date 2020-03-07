@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>index</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="main.html"><img src="assets/icono.png" alt="" id="logo"/></a>
+
+        <span id="user">username</span>
+      </div>
+    </header>
+    <div class="content" id="index">
+      <h2>Maquinas</h2>
+      <table>
+        <tr>
+          <th>ICONO</th>
+          <th>NOMBRE</th>
+          <th>OEE</th>
+          <th class="progres-col">PROGRESO</th>
+        </tr>
+        <tr onclick="window.location='maquinaDetalle.html'">
+          <td>
+            <img src="assets/maq1.jfif" alt="maquina" class="table-icon" />
+          </td>
+          <td>Maquina 2</td>
+          <td>80%</td>
+          <td class="progres-col">
+            <div class="progress">
+              <div class="progress-value" style="max-width:30%" />
+            </div>
+          </td>
+        </tr>
+        <tr onclick="window.location='maquinaDetalle.html'">
+          <td>
+            <img src="assets/maq4.jfif" alt="maquina" class="table-icon" />
+          </td>
+          <td>Maquina 2</td>
+          <td>80%</td>
+          <td class="progres-col">
+            <div class="progress">
+              <div class="progress-value warning" style="max-width:70%" />
+            </div>
+          </td>
+        </tr>
+        <tr onclick="window.location='maquinaDetalle.html'">
+          <td>
+            <img src="assets/maq3.jfif" alt="maquina" class="table-icon" />
+          </td>
+          <td>Maquina 2</td>
+          <td>80%</td>
+          <td class="progres-col">
+            <div class="progress">
+              <div class="progress-value alert" style="max-width:30%" />
+            </div>
+          </td>
+        </tr>
+        <tr onclick="window.location='maquinaDetalle.html'">
+          <td>
+            <img src="assets/maq2.jfif" alt="maquina" class="table-icon" />
+          </td>
+          <td>Maquina 2</td>
+          <td>80%</td>
+          <td class="progres-col">
+            <div class="progress">
+              <div class="progress-value" style="max-width:90%" />
+            </div>
+          </td>
+        </tr>
+        <tr onclick="window.location='maquinaDetalle.html'">
+          <td>
+            <img src="assets/maq3.jfif" alt="maquina" class="table-icon" />
+          </td>
+          <td>Maquina 2</td>
+          <td>80%</td>
+          <td class="progres-col">
+            <div class="progress">
+              <div class="progress-value alert" style="max-width:30%" />
+            </div>
+          </td>
+        </tr>
+        <tr onclick="window.location='maquinaDetalle.html'">
+          <td>
+            <img src="assets/maq2.jfif" alt="maquina" class="table-icon" />
+          </td>
+          <td>Maquina 2</td>
+          <td>80%</td>
+          <td class="progres-col">
+            <div class="progress">
+              <div class="progress-value" style="max-width:90%" />
+            </div>
+          </td>
+        </tr>
+      </table>
+
+      <div class="contenedor-boton">
+        <a href="nuevaMaquina.html">
+          <button>Nueva maquina</button>
+        </a>
+      </div>
+    </div>
+    <footer>
+      <span>ALL RIGHTS RESERVED </span>
+      <img src="assets/icono.png" alt="" id="footer-logo" />
+    </footer>
+  </body>
+</html>
